@@ -1,5 +1,6 @@
 import random
 
+
 class PrisonersDilemma:
     def __init__(self):
         self.player1_name = None
@@ -15,7 +16,7 @@ class PrisonersDilemma:
         self.player1_name = name1
         self.player2_name = name2
 
-    def set_(self, weight1: int, weight2: int, weight3: list, weight4: list):
+    def set_payoffs(self, weight1: int, weight2: int, weight3: list, weight4: list):
         self.cooperate = weight1
         self.defect = weight2
         self.coop_def = weight3
@@ -33,17 +34,17 @@ class PrisonersDilemma:
             self.history.append((move1, move2))
 
             if move1 == 'C' and move2 == 'C':
-                self.player1_score += 3
-                self.player2_score += 3
+                self.player1_score += self.cooperate
+                self.player2_score += self.cooperate
             elif move1 == 'C' and move2 == 'D':
-                self.player1_score += 0
-                self.player2_score += 5
+                self.player1_score += self.coop_def[0]
+                self.player2_score += self.coop_def[1]
             elif move1 == 'D' and move2 == 'C':
-                self.player1_score += 5
-                self.player2_score += 0
+                self.player1_score += self.def_coop[0]
+                self.player2_score += self.def_coop[1]
             elif move1 == 'D' and move2 == 'D':
-                self.player1_score += 1
-                self.player2_score += 1
+                self.player1_score += self.defect
+                self.player2_score += self.defect
 
             self.current_player = 1 - self.current_player
 
@@ -52,27 +53,31 @@ class PrisonersDilemma:
 
 
 def tit_for_tat(game):
-    # Start with cooperate, then mimic opponent's last move
     if not game.history:
         return 'C'
     return game.history[-1][1 - game.current_player]
+
 
 def susp_tit_for_tat(game):
     if not game.history:
         return 'D'
     return game.history[-1][1 - game.current_player]
 
+
 def always_cooperate(game):
     return 'C'
 
+
 def always_defect(game):
     return 'D'
+
 
 def random_strategy(game):
     a = random.random()
     if a >= 0.5:
         return 'C'
     return 'D'
+
 
 def probable_coop(game):
     # Accept the probability from the user
