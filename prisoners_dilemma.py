@@ -165,7 +165,6 @@ def memory_one(game):
     return 'D'
 
 
-# Add more strategies ...
 if __name__ == "__main__":
     game = PrisonersDilemma()
     game.set_players("P1", "P2")
