@@ -1,6 +1,5 @@
 import random
 
-
 class PrisonersDilemma:
     def __init__(self):
         self.player1_name = None
@@ -9,6 +8,8 @@ class PrisonersDilemma:
         self.player2_score = 0
         self.player1_strategy = None
         self.player2_strategy = None
+        self.history = []
+        self.current_player = 0  # 0 for player 1, 1 for player 2
 
     def set_players(self, name1, name2):
         self.player1_name = name1
@@ -25,12 +26,11 @@ class PrisonersDilemma:
         self.player2_strategy = strategy2
 
     def play(self, iterations):
-        history = []
         for i in range(iterations):
-            move1 = self.player1_strategy(history, 0)
-            move2 = self.player2_strategy(history, 1)
+            move1 = self.player1_strategy(self)
+            move2 = self.player2_strategy(self)
 
-            history.append((move1, move2))
+            self.history.append((move1, move2))
 
             if move1 == 'C' and move2 == 'C':
                 self.player1_score += 3
@@ -45,39 +45,36 @@ class PrisonersDilemma:
                 self.player1_score += 1
                 self.player2_score += 1
 
+            self.current_player = 1 - self.current_player
+
     def display_scores(self):
         return (self.player1_score, self.player2_score)
 
 
-def tit_for_tat(history, player):
+def tit_for_tat(game):
     # Start with cooperate, then mimic opponent's last move
-    if not history:
+    if not game.history:
         return 'C'
-    return history[-1][1-player]
+    return game.history[-1][1 - game.current_player]
 
-
-def susp_tit_for_tat(history, player):
-    if not history:
+def susp_tit_for_tat(game):
+    if not game.history:
         return 'D'
-    return history[-1][1-player]
+    return game.history[-1][1 - game.current_player]
 
-
-def always_cooperate(history, player):
+def always_cooperate(game):
     return 'C'
 
-
-def always_defect(history, player):
+def always_defect(game):
     return 'D'
 
-
-def random(history, player):
+def random_strategy(game):
     a = random.random()
     if a >= 0.5:
         return 'C'
     return 'D'
 
-
-def probable_coop(history, player):
+def probable_coop(game):
     # Accept the probability from the user
     prob = int(input("Enter the probability"))
     a = random.random()
