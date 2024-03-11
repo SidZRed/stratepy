@@ -87,6 +87,8 @@ def probable_coop(game):
         return 'C'
     return 'D'
 
+# Add more strategies ...
+
 
 if __name__ == "__main__":
     game = PrisonersDilemma()
