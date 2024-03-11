@@ -11,6 +11,12 @@ class PrisonersDilemma:
         self.player2_strategy = None
         self.history = []
         self.current_player = 0  # 0 for player 1, 1 for player 2
+        self.grim = 0
+        self.pav_prob = 1
+        self.reactive = 0
+        self.reactive_c = 0
+        self.reactive_d = 0
+        self.memory_one = [0, 0, 0, 0]
 
     def set_players(self, name1, name2):
         self.player1_name = name1
@@ -25,6 +31,17 @@ class PrisonersDilemma:
     def set_strategies(self, strategy1, strategy2):
         self.player1_strategy = strategy1
         self.player2_strategy = strategy2
+
+    def set_reactive(self, y, p, q):
+        self.reactive = y
+        self.reactive_c = p
+        self.reactive_d = q
+
+    def set_memory_one(self, a, b, c, d):
+        self.memory_one[0] = a
+        self.memory_one[1] = b
+        self.memory_one[2] = c
+        self.memory_one[3] = d
 
     def play(self, iterations):
         for i in range(iterations):
@@ -87,9 +104,68 @@ def probable_coop(game):
         return 'C'
     return 'D'
 
+
+def grim(game):
+    if game.grim == 1:
+        return 'D'
+    game.grim = 1
+    return 'C'
+
+
+def pavlov(game):
+    if game.history[-1][0] == game.history[-1][1]:
+        return 'C'
+    return 'D'
+
+
+def n_pavlov(game):
+    if game.history[-1] == ('D', 'D'):
+        game.pav_prob = max(0, game.pav_prob - 2/len(game.history))
+    if game.history[-1] == ('C', 'C'):
+        game.pav_prob = min(1, game.pav_prob + 1/len(game.history))
+    if game.history[-1][game.current_player] == 'D':
+        game.pav_prob = min(1, game.pav_prob + 2/len(game.history))
+    if game.history[-1][game.current_player] == 'C':
+        game.pav_prob = max(0, game.pav_prob - 1/len(game.history))
+
+
+def reactive(game):
+    a = random.random()
+    if not game.history:
+        if a <= game.reactive:
+            return 'C'
+        return 'D'
+    if game.history[-1][1-game.current_player] == 'C':
+        if a <= game.reactive_c:
+            return 'C'
+        return 'D'
+    if a <= game.reactive_d:
+        return 'D'
+    return 'C'
+
+
+def memory_one(game):
+    a = random.random()
+    if not game.history:
+        return 'C'
+    if game.history[-1] == ('C', 'C'):
+        if a <= game.memory_one[0]:
+            return 'C'
+        return 'D'
+    if game.history[-1] == ('D', 'D'):
+        if a <= game.memory_one[1]:
+            return 'C'
+        return 'D'
+    if game.history[-1] == ('C', 'D'):
+        if a <= game.memory_one[2]:
+            return 'C'
+        return 'D'
+    if a <= game.memory_one[3]:
+        return 'C'
+    return 'D'
+
+
 # Add more strategies ...
-
-
 if __name__ == "__main__":
     game = PrisonersDilemma()
     game.set_players("P1", "P2")
