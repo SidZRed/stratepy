@@ -1,0 +1,1 @@
+# Program to simulate a votig system
