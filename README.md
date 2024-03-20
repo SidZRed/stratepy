@@ -14,7 +14,7 @@ stratepy is a Python library designed to facilitate simulations of strategies in
 You can install stratepy via pip:
 
 ``` 
-pip install stratepy
+$ pip install stratepy
 ```
 ## Getting Started
 
