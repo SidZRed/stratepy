@@ -1,5 +1,7 @@
 # stratepy: A Python Library for Game Theory Simulations
-![image](https://github.com/SidZRed/stratepy/assets/141948050/6c931c67-fa86-4e82-bb52-c9b62a8110cd)
+![image](https://github.com/SidZRed/stratepy/assets/141948050/e2d1c151-3ad7-4500-b544-f3c6a04fcc42)
+
+
 
 stratepy is a Python library designed to facilitate simulations of strategies in Game Theory. With a variety of built-in strategies and customizable parameters, it allows for the exploration and analysis of different decision-making scenarios.
 
