@@ -6,6 +6,6 @@ Home-page: https://github.com/SidZRed/stratepy
 Author: Siddharth Reddy
 Author-email: siddharthrr@iisc.ac.in
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: Apache License 2.0
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 License-File: LICENSE
