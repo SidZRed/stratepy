@@ -1,1 +1,2 @@
-# Initialization file for the voting_systems package
+from .voting_models import Voting
+from .voting_sim import simulate_voting
