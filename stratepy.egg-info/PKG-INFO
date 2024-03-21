@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: stratepy
+Version: 0.1
+Summary: A python package for testing and experimenting with strategies related to Game theory, voting systems and auction systems
+Home-page: https://github.com/SidZRed/stratepy
+Author: Siddharth Reddy
+Author-email: siddharthrr@iisc.ac.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache License 2.0
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
