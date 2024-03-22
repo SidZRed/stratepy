@@ -5,6 +5,9 @@
 
 stratepy is a Python library designed to facilitate simulations of strategies in Game Theory. With a variety of built-in strategies and customizable parameters, it allows for the exploration and analysis of different decision-making scenarios.
 
+
+[Library](https://pypi.org/project/stratepy/)
+
 ## Features
 
 -   Simulate game theory scenarios such as the Prisoner's Dilemma.
