@@ -12,8 +12,7 @@ stratepy is a Python library designed to facilitate simulations in game theory, 
 
 You can install stratepy via pip:
 
-bashCopy code
-
+bash:
 `$ pip install stratepy` 
 
 ## Documentation
