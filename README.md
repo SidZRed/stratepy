@@ -21,7 +21,7 @@ For detailed documentation and usage examples, refer to the following READMEs:
 
 -   [Game Theory Simulations](https://github.com/SidZRed/stratepy/prisoners_dilemma/README.md): Learn how to simulate classic game theory scenarios and analyze strategies.
 -   [Voting Systems](https://github.com/SidZRed/stratepy/voting_systems/README.md): Explore different voting systems, simulate elections, and analyze voting outcomes.
--   [Auction Systems]((https://github.com/SidZRed/stratepy/blob/main/auction_systems/README.md)): Model various auction mechanisms, simulate auctions, and analyze bidding strategies.
+-   [Auction Systems](https://github.com/SidZRed/stratepy/blob/main/auction_systems/README.md): Model various auction mechanisms, simulate auctions, and analyze bidding strategies.
 
 ## License
 
