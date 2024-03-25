@@ -1,5 +1,7 @@
 # stratepy: A Python Library for Game Theory Simulations, Voting Systems, and Auction Systems
 
+![image](https://github.com/SidZRed/stratepy/blob/main/stratepy_logo.png)
+
 stratepy is a Python library designed to facilitate simulations in game theory, voting systems, and auction mechanisms. It provides a versatile set of tools for exploring decision-making scenarios across various domains.
 
 ## Features
