@@ -2,7 +2,8 @@
 
 ![image](https://github.com/SidZRed/stratepy/blob/main/stratepy_logo.png)
 
-![Static Badge](https://img.shields.io/badge/Version-v1.0-green)
+![Static Badge](https://img.shields.io/badge/Version-v1.0-green) ![Static Badge](https://img.shields.io/badge/Language-python-green?logo=python&logoColor=green)
+
 
 
 stratepy is a Python library designed to facilitate simulations in game theory, voting systems, and auction mechanisms. It provides a versatile set of tools for exploring decision-making scenarios across various domains.
