@@ -38,3 +38,7 @@ This library is released under the Apache-2.0 License. See the LICENSE file for 
 ## Support
 
 For questions, bug reports, or feature requests, please contact [@SidZRed](https://github.com/SidZRed).
+
+## Credits:
+ 
+Created and ublished by Siddharth Reddy [@SidZRed](https://github.com/SidZRed)
