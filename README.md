@@ -41,4 +41,4 @@ For questions, bug reports, or feature requests, please contact [@SidZRed](https
 
 ## Credits:
  
-Created and ublished by Siddharth Reddy [@SidZRed](https://github.com/SidZRed)
+Created and published by Siddharth Reddy ([@SidZRed](https://github.com/SidZRed))
