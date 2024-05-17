@@ -23,6 +23,10 @@ You can install stratepy via pip:
 pip install stratepy
 ```
 
+## Official publication:
+Visit the PyPi official publication of the package.
+[Stratepy](https://pypi.org/project/stratepy/)
+
 ## Documentation
 
 For detailed documentation and usage examples, refer to the following READMEs:
