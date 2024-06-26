@@ -2,7 +2,10 @@
 
 ![image](stratepy_logo.png)
 
-![Static Badge](https://img.shields.io/badge/Version-v1.0-green) ![Static Badge](https://img.shields.io/badge/Language-python-green?logo=python&logoColor=green)![PyPI - License](https://img.shields.io/pypi/l/stratepy?logo=python)
+![Static Badge](https://img.shields.io/badge/Version-v1.0-green) ![Static Badge](https://img.shields.io/badge/Language-python-green?logo=python&logoColor=green) 
+
+![Static Badge](https://img.shields.io/badge/License-Apache--2.0-green)
+
 
 
 
