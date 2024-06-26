@@ -1,6 +1,6 @@
 # stratepy: A Python Library for Game Theory Simulations, Voting Systems, and Auction Systems
 
-![image](https://github.com/SidZRed/stratepy/blob/main/stratepy_logo.png)
+![image](stratepy_logo.png)
 
 ![Static Badge](https://img.shields.io/badge/Version-v1.0-green) ![Static Badge](https://img.shields.io/badge/Language-python-green?logo=python&logoColor=green)![PyPI - License](https://img.shields.io/pypi/l/stratepy?logo=python)
 
