@@ -1,4 +1,4 @@
-# stratepy: A Python Library for Game Theory Simulations, Voting Systems, and Auction Systems
+# StratePy: A Python Library for Game Theory Simulations, Voting Systems, and Auction Systems
 
 ![image](stratepy_logo.png)
 
