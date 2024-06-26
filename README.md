@@ -24,12 +24,12 @@ pip install stratepy
 ```
 
 ## Official publication:
-Visit the PyPi official publication of the package.
+Visit the PyPi official publication of the package:
 [Stratepy](https://pypi.org/project/stratepy/)
 
 ## Documentation
 
-For detailed documentation and usage examples, refer to the following READMEs:
+For detailed documentation and usage examples, refer to the following documentations:
 
 -   [Game Theory Simulations](https://github.com/SidZRed/stratepy/blob/main/prisoners_dilemma/README.md): Learn how to simulate classic game theory scenarios and analyze strategies.
 -   [Voting Systems](https://github.com/SidZRed/stratepy/blob/main/voting_systems/README.md): Explore different voting systems, simulate elections, and analyze voting outcomes.
