@@ -38,6 +38,11 @@ For detailed documentation and usage examples, refer to the following documentat
 -   [Voting Systems](https://github.com/SidZRed/stratepy/blob/main/voting_systems/README.md): Explore different voting systems, simulate elections, and analyze voting outcomes.
 -   [Auction Systems](https://github.com/SidZRed/stratepy/blob/main/auction_systems/README.md): Model various auction mechanisms, simulate auctions, and analyze bidding strategies.
 
+## Local Setup
+You can set up the project locally using the source code available in the release.
+
+[Source](https://github.com/SidZRed/stratepy/releases/tag/v1.1.0)
+
 ## License
 
 This library is released under the Apache-2.0 License. See the LICENSE file for more details.
