@@ -40,6 +40,7 @@ For detailed documentation and usage examples, refer to the following documentat
 
 ## Local Setup
 You can set up the project locally using the source code available in the release.
+However it is recommended to use the pip installation.
 
 [Source](https://github.com/SidZRed/stratepy/releases/tag/v1.1.0)
 
